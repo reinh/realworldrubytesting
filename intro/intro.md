@@ -1,7 +1,7 @@
 !SLIDE smbullets center
 
 * Rein Henrichs | [@reinh](http://twitter.com/reinh) | [reinh.com](http://reinh.com)
-* Slides: [http://realworldrubytesting.heroku.com](http://real-world-ruby-testing.heroku.com)
+* Slides: <http://realworldrubytesting.heroku.com>
 
 <br> <br>
 
