@@ -1,3 +1,7 @@
-{ "name": "My Preso", "sections": [
-  {"section":"intro"}
+{ "name": "Real World Ruby Testing", "sections": [
+  {"section": "title"},
+  {"section": "intro"},
+  {"section": "what"},
+  {"section": "why"},
+  {"section": "how"}
 ]}

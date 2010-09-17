@@ -1,0 +1,8 @@
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.2; color: #222; }
+h1, h2, h3 { font-family: "Geogrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; }
+
+code { font-size: 120%; }
+pre code { font-size: 100%; }
+
+.big { font-size: 125%; }
+.bigger { font-size: 150%; }

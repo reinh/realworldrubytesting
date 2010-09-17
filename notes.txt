@@ -1,3 +1,80 @@
+Good Practices
+
+Isolation
+
+Tests should not affect one another.
+
 Testing talk notes:
 
 Your choice of testing framework is not a salient factor in the quality of your tests.
+
+Tools
+
+Test::Unit
+Shoulda
+RSpec
+Minitest
+Micronaut
+Bacon
+Baretest
+Riot
+Cucumber
+
+Terminology
+===========
+
+"Unit Test or Functional Test"
+
+Unit and Functional are implementation revealing words. What is the **intent**?
+
+Why We Test
+===========
+
+Drive Development
+-----------------
+
+Manage Change
+-------------
+
+Good Tests
+==========
+
+Fast Focused Feedback
+
+Fast
+----
+
+1/10th of a second is slow
+
+Focused
+-------
+
+Feedback
+--------
+
+* Change is inevitable. The need for feedback is created by change.
+
+> Do the best you can today, striving for the awareness and understanding
+> necessary to do better tomorrow
+-- Kent Beck
+
+Testing Smells
+==============
+
+* State leak
+* Complex setup
+* Unexpected breakages
+
+Methodologies
+=============
+
+Seam
+----
+
+Sensing
+-------
+
+Separation
+----------
+
+Intent
