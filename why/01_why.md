@@ -1,13 +1,13 @@
 !SLIDE bullets
 
-Why Should We Test
+Why We Should Test
 ===========
 
 * "Clean code that works" — Ron Jeffries
 
 !SLIDE smbullets
 
-Why Should We Test
+Why We Should Test
 ===========
 
 * "Change is inevitable, but change creates  
@@ -16,7 +16,7 @@ Why Should We Test
 
 !SLIDE bullets
 
-Why Should We Test
+Why We Should Test
 ===========
 
 * Confidence
@@ -24,7 +24,7 @@ Why Should We Test
 
 !SLIDE smbullets
 
-Why Should We Test
+Why We Should Test
 ==================
 
 * Teams relax and develop trust
@@ -33,7 +33,7 @@ Why Should We Test
 
 !SLIDE bullets
 
-Why Do We Test
+Why We Do Test
 ===========
 
 * Drive Development
