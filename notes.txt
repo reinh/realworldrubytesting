@@ -107,6 +107,10 @@ good tests give us confidence that our code does what we think it does. For the
 future, they allow us to make changes with confidence that we are only changing
 what we think we are changing in the way we expect it to change.
 
+Communication comes in many forms. The most important is feedback, which I'll
+discuss later. Another benefit of tests in general and BDD specs in particular
+is that they can be used as living documentation.
+
 Teams relax and develop trust
 
 Customers learn to look forward to releases

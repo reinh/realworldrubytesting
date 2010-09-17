@@ -1,7 +1,10 @@
 { "name": "Real World Ruby Testing", "sections": [
   {"section": "title"},
   {"section": "intro"},
+  {"section": "ninethousand"},
   {"section": "what"},
   {"section": "why"},
-  {"section": "how"}
+  {"section": "how"},
+  {"section": "close"},
+  {"section": "intro"}
 ]}

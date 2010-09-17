@@ -1,6 +1,6 @@
 !SLIDE bullets
 
-How We Test
+How Should We Test
 ============
 
 * Good Tests
@@ -40,3 +40,32 @@ Testing Practices
 * First Test
 * Mocking and Stubbing
 
+!SLIDE bullets
+
+How Do We Test
+==============
+
+* Red Green Refactor
+* Using Feedback
+
+!SLIDE bullets
+
+Red Green Refactor
+==================
+
+* Quickly add a test from your list.
+* See the test fail.
+* Make a change.
+* See the test succeed.
+* Refactor to remove duplication.
+
+!SLIDE bullets
+
+Using Feedback
+==============
+
+* What's the smallest testable increment  
+  of functionality?
+* How small should the tests and changes be?
+* How often should the tests be run?
+* How many steps should the refactor take?
