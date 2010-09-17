@@ -1,80 +1,209 @@
-Good Practices
+Title
+=====
 
-Isolation
+Good morning everyone. My name is Rein Henrichs and this is Real World Ruby
+Testing. Today, I'm going to talk to you about what you should use to test and
+how you should write your tests. For those of you who don't write tests or
+don't write them often, I'll talk briefly about *why* you should write tests.
 
-Tests should not affect one another.
+Before I get started, I want to ask you all a few questions:
 
-Testing talk notes:
+How many of you here by show of hands have never written a test before?
+How many of you write tests every day?
 
-Your choice of testing framework is not a salient factor in the quality of your tests.
+For those of you who do write tests:
 
-Tools
+How many of you use Test::Unit?
+How many of you use RSpec?
+How many of you use Shoulda?
+How many of you use something else?
+
+Intro
+=====
+
+So this is me. I twitter and I blog. I work at PuppetLabs, the maker of Puppet
+and Puppet related accessories. The slides for this talk are available for you
+to follow along on your laptops if you would like.
+
+rake spec
+---------
+
+This is the RSpec suite for Puppet. If you add in the specs that didn't run
+because I'm not on FreeBSD, Debian, RHEL or AIX and so on, the total number of
+examples is well over 9000.
+
+Testing Frameworks
+==================
+
+There are a lot of testing frameworks out there in Ruby land. We're going to
+look at the most popular ones briefly.
 
 Test::Unit
-Shoulda
+==========
+
 RSpec
-Minitest
+=====
+
+* Written by David Chelimsky, a core team of developers and dozens of contributors
+
+Shoulda
+=======
+
+* Written by Tammer Saleh and Thoughtbot
+
+Microtest
+=========
+
+* Written by Ryan Davis
+
 Micronaut
+=========
+
+* Written by Chad Humphries of Relevance, Inc
+
 Bacon
+=====
+
+* Written by Christian Neukirchen
+
 Baretest
-Riot
-Cucumber
+========
 
-Terminology
-===========
+* Written by Stefan Rusterholz
 
-"Unit Test or Functional Test"
+Bacon
+=====
 
-Unit and Functional are implementation revealing words. What is the **intent**?
+* Written by Justin Knowlden
+
+Choosing a Testing Framework
+============================
+
+Now that I've shown you all of these testing frameworks, I'm going to say
+something that might surprise you:
+
+"Your choice of testing framework isn't a significant contributor to the
+quality of your tests"
+
+What really matters is familiarity and expressiveness. Familiarity is your own
+familiarity with your chosen framework, your team's familiarity and your
+community' familiarity. It's how long it will take you to find answers to
+difficult testing frameworks. Expressiveness is the quality of feedback
+provided or enabled by the framework. All of these frameworks can provide good
+feedback, but some may make it easier for you.
 
 Why We Test
 ===========
 
+In Test-Driven Development by example, Kent Beck cites Ross Jeffries' phrase
+"Clean code that works" as the goal of Test Driven Development. I would like to
+propose two other reasons for writing tests: we write tests to drive
+development and manage change.
+
+There are two important reasons to write tests, confidence and communication.
+
+Tests give us confidence in the present and for the future. In the present,
+good tests give us confidence that our code does what we think it does. For the
+future, they allow us to make changes with confidence that we are only changing
+what we think we are changing in the way we expect it to change.
+
+Teams relax and develop trust
+
+Customers learn to look forward to releases
+
+Shortens feedback loop
+
+For all you businessy types, this means shorter time to market, allows you
+to leverage increased adaptibility to market transitions and promotes synergy.
+
 Drive Development
------------------
+=================
+
+Scope Creep
+-----------
+
+Using tests to drive development allows us to maintain our focus. We only write the tests we need, and we only write enough code to make those tests pass. This helps us avoid scope creep.
+
+Rhythm
+------
 
 Manage Change
--------------
+=============
+
+How We Test
+===========
 
 Good Tests
 ==========
 
-Fast Focused Feedback
+What makes a test good? A test is good if it provides "fast focused feedback".
 
-Fast
-----
-
-1/10th of a second is slow
-
-Focused
--------
-
-Feedback
---------
-
-* Change is inevitable. The need for feedback is created by change.
-
-> Do the best you can today, striving for the awareness and understanding
-> necessary to do better tomorrow
--- Kent Beck
+* Slow tests won't get run enough
+* Test one thing at a time
+* Localize problems quickly
+* Minimize distance between test and code
 
 Testing Smells
 ==============
 
-* State leak
-* Complex setup
-* Unexpected breakages
+Testing smells indicate potential design problems, but not with your tests.
+These testing smells are warning you of design flaws in your code.
 
-Methodologies
-=============
-
-Seam
-----
-
-Sensing
--------
-
-Separation
+State Leak
 ----------
 
-Intent
+Long Setup Code
+---------------
+
+Indicates that your code under test is too complicated. Your classes are too
+big and/or their interactions are too many.
+
+Long Running Tests
+------------------
+
+* Won't be run often
+* Haven't been run in a while
+* Probably don't work
+* Suggest that the code is hard to test, which is a design problem
+
+Fragile Tests
+-------------
+
+Tests should not break unexpectedly. When they do, it suggests that your code
+is interacting in surprising ways. Effects that happen at a distance are
+difficult to understand and more difficult still to debug. Again, this is a
+design problem, not a test problem
+
+Testing Practices
+=================
+
+Isolation
+---------
+
+Tests should not affect one another.
+
+Test List
+---------
+
+Regression Tests
+----------------
+
+Before you fix a bug, write a test. Then ask yourself why you didn't write that
+test before you wrote the code.
+
+Test First
+----------
+
+First Test
+----------
+
+What test should you write first? Pick a test from your list that will teach
+you something and that you are confident that you can implement.
+
+Mocking and Stubbing
+--------------------
+
+Mocking and Stubbing is a topic worthy of a few talks of its own, but I will say this:
+
+Understand the different tools: fakes, mocks, stubs. Remember what Kent Beck
+said: use the simplest thing that could possibly work.

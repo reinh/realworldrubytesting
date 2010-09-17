@@ -1,20 +1,13 @@
 !SLIDE bullets
 
-Why We Test
+Why Should We Test
 ===========
 
 * "Clean code that works" — Ron Jeffries
 
-!SLIDE bullets
+!SLIDE smbullets
 
-Why We Test
-===========
-
-* Feedback
-
-!SLIDE small bullets
-
-Why We Test
+Why Should We Test
 ===========
 
 * "Change is inevitable, but change creates  
@@ -23,24 +16,25 @@ Why We Test
 
 !SLIDE bullets
 
-Why We Test
+Why Should We Test
+===========
+
+* Confidence
+* Communication
+
+!SLIDE smbullets
+
+Why Should We Test
+==================
+
+* Teams relax and develop trust
+* Customers learn to look forward to releases
+* Shortens the feedback loop on design decisions
+
+!SLIDE bullets
+
+Why Do We Test
 ===========
 
 * Drive Development
 * Manage Change
-
-!SLIDE small bullets
-
-Why We Test — Drive Development
-===============================
-
-* Scope creep
-* Rhythm
-
-!SLIDE small bullets
-
-Why We Test — Manage Change
-===========================
-
-* Detecting Change
-* Trust

@@ -5,7 +5,7 @@ How We Test
 
 * Good Tests
 * Testing Smells
-* Good Practices
+* Testing Practices
 
 !SLIDE incremental bullets
 
@@ -31,8 +31,12 @@ Testing Smells
 
 !SLIDE incremental bullets
 
-Good Practices
+Testing Practices
 ==============
 
 * Isolation
+* Test List
 * Regression Tests
+* First Test
+* Mocking and Stubbing
+
